@@ -1,0 +1,201 @@
+/* Alap beállítások */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Fejléc és navigáció */
+header {
+    background-color: #ff6347; /* Tűzpiros háttér */
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Ehhez szükséges a legördülő menühöz */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Sárga hover effekt */
+}
+
+/* Legördülő menü alap stílusa */
+.dropdown {
+    position: relative; /* Ehhez kell, hogy a legördülő tartalom helyesen jelenjen meg */
+}
+
+.dropdown .dropbtn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f57c00;
+}
+
+/* A legördülő tartalom (kezdetben rejtve) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown-content li a {
+    color: #333;
+    font-size: 16px;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f57c00;
+    color: white;
+}
+
+/* A legördülő menü megjelenítése, amikor az elem fölé viszik az egeret */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Kezdőlap szakasz */
+#home {
+    background: url('food-background.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home .intro h1 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#home .intro p {
+    color: white;
+    font-size: 24px;
+}
+
+.cta-button {
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #f57c00;
+}
+
+/* Rólunk szakasz */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #ff6347;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+/* Galéria szakasz */
+#gallery {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-images img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Kapcsolat szakasz */
+#contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#contact form button:hover {
+    background-color: #f57c00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
